@@ -46,3 +46,22 @@
             <img src="<?php echo esc_url(get_theme_file_uri('img/smileG.png')) ?>" alt=""><img src="<?php echo esc_url(get_theme_file_uri('img/smileY.png')) ?>" alt=""><img src="<?php echo esc_url(get_theme_file_uri('img/smileR.png')) ?>" alt="">
         </div>
     </div>
+    <div class="menu">
+        <div class="c_m"><b>CLOSE</b><b>MENU</b></div>
+        <input type="checkbox">
+        <span id="inbox" class="flex"><ion-icon name="bulb-outline"></ion-icon></span>
+    </div>
+    <header class="selectmenu">
+        <div class="menuback flex">
+            <ul class="menu_list">
+                <li><a href="<?php echo esc_url(home_url()) ?>">MAIN</a></li>
+                <li><a href="<?php echo esc_url(home_url('/about')) ?>">ABOUT</a></li>
+                <li><a href="<?php echo esc_url(home_url('/category/works')) ?>">WORKS</a></li>
+                <li><a href="<?php echo esc_url(home_url('/contact')) ?>">CONTACT</a></li>
+            </ul>
+            <div class="rump flex">
+                <img class="in_rump" src="<?php echo esc_url(get_theme_file_uri('img/rump.png')) ?>" alt="rump">
+                <img class="in_light" src="<?php echo esc_url(get_theme_file_uri('img/light.png')) ?>" alt="light">
+            </div>
+        </div>
+    </header>
