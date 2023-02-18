@@ -1211,6 +1211,7 @@
 }
 $i: 1;
 $j: 1;
+
 @each $value in v.$works-color {
   .worksmob:nth-of-type(#{$i}) {
     border-left: 5px solid $value;
@@ -1222,6 +1223,24 @@ $j: 1;
     border-right: 600px solid $value;
     border-top: 500px solid transparent;
     border-bottom: 0 solid $value;
+    @include m.mq(sp) {
+      border-left: 0 solid transparent;
+      border-right: 530px solid $value;
+      border-top: 441px solid transparent;
+      border-bottom: 0 solid $value;
+    }
+    @include m.mq(sp1) {
+      border-left: 0 solid transparent;
+      border-right: 430px solid $value;
+      border-top: 358px solid transparent;
+      border-bottom: 0 solid $value;
+    }
+    @include m.mq(sp2) {
+      border-left: 0 solid transparent;
+      border-right: 330px solid $value;
+      border-top: 275px solid transparent;
+      border-bottom: 0 solid $value;
+    }
   }
   $i: $i + 1;
 }
@@ -1231,61 +1250,6 @@ $j: 1;
   }
   $j: $j + 1;
 }
-// .worksmob:nth-of-type(3) {
-//   border-left: 5px solid rgb(173, 173, 173);
-//   border-top: 5px solid rgb(173, 173, 173);
-//   box-shadow: -7px -7px 10px 0 rgba(255, 255, 255, 0.659);
-// }
-// .worksmob:nth-of-type(4) {
-//   border-left: 5px solid rgb(121, 255, 98);
-//   border-top: 5px solid rgb(121, 255, 98);
-//   box-shadow: -7px -7px 10px 0 rgba(133, 255, 129, 0.659);
-// }
-// .worksmob:nth-of-type(5) {
-//   border-left: 5px solid rgb(255, 142, 212);
-//   border-top: 5px solid rgb(255, 142, 212);
-//   box-shadow: -7px -7px 10px 0 rgba(255, 142, 212, 0.659);
-// }
-// .worksmob:nth-of-type(6) {
-//   border-left: 5px solid rgb(98, 255, 239);
-//   border-top: 5px solid rgb(98, 255, 239);
-//   box-shadow: -7px -7px 10px 0 rgba(98, 255, 239, 0.659);
-// }
-// .worksmob:nth-of-type(7) {
-//   border-left: 5px solid rgb(255, 182, 98);
-//   border-top: 5px solid rgb(255, 182, 98);
-//   box-shadow: -7px -7px 10px 0 rgba(255, 182, 98, 0.659);
-// }
-// .worksmob:nth-of-type(8) {
-//   border-left: 5px solid rgb(255, 98, 98);
-//   border-top: 5px solid rgb(255, 98, 98);
-//   box-shadow: -7px -7px 10px 0 rgba(255, 98, 98, 0.659);
-// }
-// .worksmob:nth-of-type(9) {
-//   border-left: 5px solid rgb(173, 173, 173);
-//   border-top: 5px solid rgb(173, 173, 173);
-//   box-shadow: -7px -7px 10px 0 rgba(255, 255, 255, 0.659);
-// }
-// .worksmob:nth-of-type(10) {
-//   border-left: 5px solid rgb(121, 255, 98);
-//   border-top: 5px solid rgb(121, 255, 98);
-//   box-shadow: -7px -7px 10px 0 rgba(133, 255, 129, 0.659);
-// }
-// .worksmob:nth-of-type(11) {
-//   border-left: 5px solid rgb(184, 0, 235);
-//   border-top: 5px solid rgb(184, 0, 235);
-//   box-shadow: -7px -7px 10px 0 rgba(184, 0, 235, 0.659);
-// }
-// .worksmob:nth-of-type(12) {
-//   border-left: 5px solid rgb(255, 170, 73);
-//   border-top: 5px solid rgb(255, 170, 73);
-//   box-shadow: -7px -7px 10px 0 rgba(255, 170, 73, 0.659);
-// }
-// .worksmob:nth-of-type(13) {
-//   border-left: 5px solid rgb(255, 223, 186);
-//   border-top: 5px solid rgb(255, 223, 186);
-//   box-shadow: -7px -7px 10px 0 rgba(255, 223, 186, 0.659);
-// }
 
 .worksfadeIn {
   animation-name: worksfadeIn;
@@ -1305,8 +1269,6 @@ $j: 1;
   text-align: center;
   opacity: 0;
   z-index: 300;
-}
-.worksmob span {
 }
 
 .worksmob a {
@@ -1345,73 +1307,6 @@ $j: 1;
   border-top: 500px solid transparent;
   overflow: hidden;
 }
-// .worksmob:nth-of-type(3) .traiangle {
-//   border-left: 0 solid transparent;
-//   border-right: 600px solid rgb(209, 209, 209);
-//   border-top: 500px solid transparent;
-//   border-bottom: 0 solid rgb(209, 209, 209);
-// }
-
-// .worksmob:nth-of-type(4) .traiangle {
-//   border-left: 0 solid transparent;
-//   border-right: 600px solid rgb(0, 96, 14);
-//   border-top: 500px solid transparent;
-//   border-bottom: 0 solid rgb(0, 96, 14);
-// }
-// .worksmob:nth-of-type(5) .traiangle {
-//   border-left: 0 solid transparent;
-//   border-right: 600px solid rgb(255, 142, 212);
-//   border-top: 500px solid transparent;
-//   border-bottom: 0 solid rgb(255, 142, 212);
-// }
-// .worksmob:nth-of-type(6) .traiangle {
-//   border-left: 0 solid transparent;
-//   border-right: 600px solid rgb(98, 255, 239);
-//   border-top: 500px solid transparent;
-//   border-bottom: 0 solid rgb(98, 255, 239);
-// }
-// .worksmob:nth-of-type(7) .traiangle {
-//   border-left: 0 solid transparent;
-//   border-right: 600px solid rgb(255, 182, 98);
-//   border-top: 500px solid transparent;
-//   border-bottom: 0 solid rgb(255, 182, 98);
-// }
-// .worksmob:nth-of-type(8) .traiangle {
-//   border-left: 0 solid transparent;
-//   border-right: 600px solid rgb(255, 98, 98);
-//   border-top: 500px solid transparent;
-//   border-bottom: 0 solid rgb(255, 98, 98);
-// }
-// .worksmob:nth-of-type(9) .traiangle {
-//   border-left: 0 solid transparent;
-//   border-right: 600px solid rgb(173, 173, 173);
-//   border-top: 500px solid transparent;
-//   border-bottom: 0 solid rgb(173, 173, 173);
-// }
-// .worksmob:nth-of-type(10) .traiangle {
-//   border-left: 0 solid transparent;
-//   border-right: 600px solid rgb(121, 255, 98);
-//   border-top: 500px solid transparent;
-//   border-bottom: 0 solid rgb(121, 255, 98);
-// }
-// .worksmob:nth-of-type(11) .traiangle {
-//   border-left: 0 solid transparent;
-//   border-right: 600px solid rgb(184, 0, 235);
-//   border-top: 500px solid transparent;
-//   border-bottom: 0 solid rgb(184, 0, 235);
-// }
-// .worksmob:nth-of-type(12) .traiangle {
-//   border-left: 0 solid transparent;
-//   border-right: 600px solid rgb(255, 170, 73);
-//   border-top: 500px solid transparent;
-//   border-bottom: 0 solid rgb(255, 170, 73);
-// }
-// .worksmob:nth-of-type(13) .traiangle {
-//   border-left: 0 solid transparent;
-//   border-right: 600px solid rgb(255, 223, 186);
-//   border-top: 500px solid transparent;
-//   border-bottom: 0 solid rgb(255, 223, 186);
-// }
 .worksrotate {
   animation: worksrotate;
   animation-fill-mode: forwards;
@@ -1485,314 +1380,83 @@ $j: 1;
     max-width: 1000px;
   }
 }
-// @media screen and (max-width: 750px) {
-//   .work {
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//   }
-//   .worksmob {
-//     width: 530px;
-//   }
-//   .mobimg {
-//     width: 520px;
-//     height: 393px;
-//   }
+@media screen and (max-width: 750px) {
+  .work {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .worksmob {
+    width: 530px;
+  }
+  .mobimg {
+    width: 520px;
+    height: 393px;
+  }
 
-//   .worksmob h1 {
-//     font-size: 7.5rem;
-//     bottom: 5px;
-//     padding-right: 20%;
-//   }
-//   .worksmob h1 span {
-//     font-size: 6.5rem;
-//   }
-//   .worksinfo {
-//     font-size: 1.2rem;
-//     bottom: -200px;
-//   }
-//   .traiangle {
-//     border-right: 530px solid rgb(186, 0, 164);
-//     border-top: 441px solid transparent;
-//   }
-//   .worksmob:nth-of-type(2) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 530px solid rgb(182, 82, 0);
-//     border-top: 441px solid transparent;
-//     border-bottom: 0 solid rgb(182, 82, 0);
-//   }
-//   .worksmob:nth-of-type(3) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 530px solid rgb(209, 209, 209);
-//     border-top: 441px solid transparent;
-//     border-bottom: 0 solid rgb(209, 209, 209);
-//   }
-
-//   .worksmob:nth-of-type(4) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 530px solid rgb(0, 96, 14);
-//     border-top: 441px solid transparent;
-//     border-bottom: 0 solid rgb(0, 96, 14);
-//   }
-//   .worksmob:nth-of-type(5) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 530px solid rgb(255, 142, 212);
-//     border-top: 441px solid transparent;
-//     border-bottom: 0 solid rgb(255, 142, 212);
-//   }
-//   .worksmob:nth-of-type(6) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 530px solid rgb(98, 255, 239);
-//     border-top: 441px solid transparent;
-//     border-bottom: 0 solid rgb(98, 255, 239);
-//   }
-//   .worksmob:nth-of-type(7) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 530px solid rgb(255, 182, 98);
-//     border-top: 441px solid transparent;
-//     border-bottom: 0 solid rgb(255, 182, 98);
-//   }
-//   .worksmob:nth-of-type(8) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 530px solid rgb(255, 98, 98);
-//     border-top: 441px solid transparent;
-//     border-bottom: 0 solid rgb(255, 98, 98);
-//   }
-//   .worksmob:nth-of-type(9) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 530px solid rgb(173, 173, 173);
-//     border-top: 441px solid transparent;
-//     border-bottom: 0 solid rgb(173, 173, 173);
-//   }
-//   .worksmob:nth-of-type(10) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 530px solid rgb(121, 255, 98);
-//     border-top: 441px solid transparent;
-//     border-bottom: 0 solid rgb(121, 255, 98);
-//   }
-//   .worksmob:nth-of-type(11) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 530px solid rgb(184, 0, 235);
-//     border-top: 441px solid transparent;
-//     border-bottom: 0 solid rgb(184, 0, 235);
-//   }
-//   .worksmob:nth-of-type(12) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 530px solid rgb(255, 170, 73);
-//     border-top: 441px solid transparent;
-//     border-bottom: 0 solid rgb(255, 170, 73);
-//   }
-//   .worksmob:nth-of-type(13) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 530px solid rgb(255, 223, 186);
-//     border-top: 441px solid transparent;
-//     border-bottom: 0 solid rgb(255, 223, 186);
-//   }
-// }
-// @media screen and (max-width: 600px) {
-//   .worksmob {
-//     width: 430px;
-//   }
-//   .mobimg {
-//     width: 420px;
-//     height: 315px;
-//   }
-//   .worksmob h1 {
-//     font-size: 6.5rem;
-//     bottom: 15px;
-//     padding-right: 20%;
-//   }
-//   .worksmob h1 span {
-//     font-size: 5.5rem;
-//     right: 150px;
-//   }
-//   .worksinfo {
-//     font-size: 1.1rem;
-//     bottom: -170px;
-//   }
-//   .traiangle {
-//     border-right: 430px solid rgb(186, 0, 164);
-//     border-top: 358px solid transparent;
-//   }
-//   .worksmob:nth-of-type(2) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 430px solid rgb(182, 82, 0);
-//     border-top: 358px solid transparent;
-//     border-bottom: 0 solid rgb(182, 82, 0);
-//   }
-//   .worksmob:nth-of-type(3) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 430px solid rgb(209, 209, 209);
-//     border-top: 358px solid transparent;
-//     border-bottom: 0 solid rgb(209, 209, 209);
-//   }
-
-//   .worksmob:nth-of-type(4) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 430px solid rgb(0, 96, 14);
-//     border-top: 358px solid transparent;
-//     border-bottom: 0 solid rgb(0, 96, 14);
-//   }
-//   .worksmob:nth-of-type(5) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 430px solid rgb(255, 142, 212);
-//     border-top: 358px solid transparent;
-//     border-bottom: 0 solid rgb(255, 142, 212);
-//   }
-//   .worksmob:nth-of-type(6) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 430px solid rgb(98, 255, 239);
-//     border-top: 358px solid transparent;
-//     border-bottom: 0 solid rgb(98, 255, 239);
-//   }
-//   .worksmob:nth-of-type(7) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 430px solid rgb(255, 182, 98);
-//     border-top: 358px solid transparent;
-//     border-bottom: 0 solid rgb(255, 182, 98);
-//   }
-//   .worksmob:nth-of-type(8) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 430px solid rgb(255, 98, 98);
-//     border-top: 358px solid transparent;
-//     border-bottom: 0 solid rgb(255, 98, 98);
-//   }
-//   .worksmob:nth-of-type(9) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 430px solid rgb(173, 173, 173);
-//     border-top: 358px solid transparent;
-//     border-bottom: 0 solid rgb(173, 173, 173);
-//   }
-//   .worksmob:nth-of-type(10) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 430px solid rgb(121, 255, 98);
-//     border-top: 358px solid transparent;
-//     border-bottom: 0 solid rgb(121, 255, 98);
-//   }
-//   .worksmob:nth-of-type(11) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 430px solid rgb(184, 0, 235);
-//     border-top: 358px solid transparent;
-//     border-bottom: 0 solid rgb(184, 0, 235);
-//   }
-//   .worksmob:nth-of-type(12) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 430px solid rgb(255, 170, 73);
-//     border-top: 358px solid transparent;
-//     border-bottom: 0 solid rgb(255, 170, 73);
-//   }
-//   .worksmob:nth-of-type(13) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 430px solid rgb(255, 223, 186);
-//     border-top: 358px solid transparent;
-//     border-bottom: 0 solid rgb(255, 223, 186);
-//   }
-// }
-// @media screen and (max-width: 460px) {
-//   .worksmob {
-//     width: 330px;
-//   }
-//   .mobimg {
-//     width: 320px;
-//     height: 240px;
-//     img {
-//       width: 100%;
-//       height: 100%;
-//     }
-//   }
-//   .worksmob h1 {
-//     font-size: 5rem;
-//     bottom: -10px;
-//     padding: 0;
-//     margin-left: -50px;
-//   }
-//   .worksmob h1 span {
-//     font-size: 4rem;
-//     top: 45px;
-//     right: 70px;
-//   }
-//   .worksinfo {
-//     font-size: 0.9rem;
-//     bottom: -130px;
-//   }
-//   .traiangle {
-//     border-right: 330px solid rgb(186, 0, 164);
-//     border-top: 275px solid transparent;
-//   }
-//   .worksmob:nth-of-type(2) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 330px solid rgb(182, 82, 0);
-//     border-top: 275px solid transparent;
-//     border-bottom: 0 solid rgb(182, 82, 0);
-//   }
-//   .worksmob:nth-of-type(3) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 330px solid rgb(209, 209, 209);
-//     border-top: 275px solid transparent;
-//     border-bottom: 0 solid rgb(209, 209, 209);
-//   }
-
-//   .worksmob:nth-of-type(4) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 330px solid rgb(0, 96, 14);
-//     border-top: 275px solid transparent;
-//     border-bottom: 0 solid rgb(0, 96, 14);
-//   }
-//   .worksmob:nth-of-type(5) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 330px solid rgb(255, 142, 212);
-//     border-top: 275px solid transparent;
-//     border-bottom: 0 solid rgb(255, 142, 212);
-//   }
-//   .worksmob:nth-of-type(6) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 330px solid rgb(98, 255, 239);
-//     border-top: 275px solid transparent;
-//     border-bottom: 0 solid rgb(98, 255, 239);
-//   }
-//   .worksmob:nth-of-type(7) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 330px solid rgb(255, 182, 98);
-//     border-top: 275px solid transparent;
-//     border-bottom: 0 solid rgb(255, 182, 98);
-//   }
-//   .worksmob:nth-of-type(8) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 330px solid rgb(255, 98, 98);
-//     border-top: 275px solid transparent;
-//     border-bottom: 0 solid rgb(255, 98, 98);
-//   }
-//   .worksmob:nth-of-type(9) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 330px solid rgb(173, 173, 173);
-//     border-top: 275px solid transparent;
-//     border-bottom: 0 solid rgb(173, 173, 173);
-//   }
-//   .worksmob:nth-of-type(10) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 330px solid rgb(121, 255, 98);
-//     border-top: 275px solid transparent;
-//     border-bottom: 0 solid rgb(121, 255, 98);
-//   }
-//   .worksmob:nth-of-type(11) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 330px solid rgb(184, 0, 235);
-//     border-top: 275px solid transparent;
-//     border-bottom: 0 solid rgb(184, 0, 235);
-//   }
-//   .worksmob:nth-of-type(12) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 330px solid rgb(255, 170, 73);
-//     border-top: 275px solid transparent;
-//     border-bottom: 0 solid rgb(255, 170, 73);
-//   }
-//   .worksmob:nth-of-type(13) .traiangle {
-//     border-left: 0 solid transparent;
-//     border-right: 330px solid rgb(255, 223, 186);
-//     border-top: 275px solid transparent;
-//     border-bottom: 0 solid rgb(255, 223, 186);
-//   }
-// }
+  .worksmob h1 {
+    font-size: 7.5rem;
+    bottom: 5px;
+    padding-right: 20%;
+  }
+  .worksmob h1 span {
+    font-size: 6.5rem;
+  }
+  .worksinfo {
+    font-size: 1.2rem;
+    bottom: -200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .worksmob {
+    width: 430px;
+  }
+  .mobimg {
+    width: 420px;
+    height: 315px;
+  }
+  .worksmob h1 {
+    font-size: 6.5rem;
+    bottom: 15px;
+    padding-right: 20%;
+  }
+  .worksmob h1 span {
+    font-size: 5.5rem;
+    right: 150px;
+  }
+  .worksinfo {
+    font-size: 1.1rem;
+    bottom: -170px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .worksmob {
+    width: 330px;
+  }
+  .mobimg {
+    width: 320px;
+    height: 240px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .worksmob h1 {
+    font-size: 5rem;
+    bottom: -10px;
+    padding: 0;
+    margin-left: -50px;
+  }
+  .worksmob h1 span {
+    font-size: 4rem;
+    top: 45px;
+    right: 70px;
+  }
+  .worksinfo {
+    font-size: 0.9rem;
+    bottom: -130px;
+  }
+}
 //portfolio.html
 .port_title {
   margin-bottom: 5%;
