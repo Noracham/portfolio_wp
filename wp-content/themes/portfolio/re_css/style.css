@@ -1854,6 +1854,24 @@
   font-size: 7rem;
   z-index: 2;
 }
+@media screen and (max-width: 750px) {
+  .worksmob a:nth-of-type(2) {
+    font-size: 6.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .worksmob a:nth-of-type(2) {
+    font-size: 5.5rem;
+    right: 150px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .worksmob a:nth-of-type(2) {
+    font-size: 4rem;
+    top: 45px;
+    right: 70px;
+  }
+}
 
 .worksIntext {
   animation-name: worksIntext;
@@ -1980,9 +1998,6 @@
     bottom: 5px;
     padding-right: 20%;
   }
-  .worksmob h1 span {
-    font-size: 6.5rem;
-  }
   .worksinfo {
     font-size: 1.2rem;
     bottom: -200px;
@@ -2000,10 +2015,6 @@
     font-size: 6.5rem;
     bottom: 15px;
     padding-right: 20%;
-  }
-  .worksmob h1 span {
-    font-size: 5.5rem;
-    right: 150px;
   }
   .worksinfo {
     font-size: 1.1rem;
@@ -2027,11 +2038,6 @@
     bottom: -10px;
     padding: 0;
     margin-left: -50px;
-  }
-  .worksmob h1 span {
-    font-size: 4rem;
-    top: 45px;
-    right: 70px;
   }
   .worksinfo {
     font-size: 0.9rem;

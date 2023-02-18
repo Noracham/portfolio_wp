@@ -1280,6 +1280,18 @@ $j: 1;
     top: 65px;
     font-size: 7rem;
     z-index: 2;
+    @include m.mq(sp) {
+      font-size: 6.5rem;
+    }
+    @include m.mq(sp1) {
+      font-size: 5.5rem;
+      right: 150px;
+    }
+    @include m.mq(sp2) {
+      font-size: 4rem;
+      top: 45px;
+      right: 70px;
+    }
   }
 }
 .worksIntext {
@@ -1399,9 +1411,7 @@ $j: 1;
     bottom: 5px;
     padding-right: 20%;
   }
-  .worksmob h1 span {
-    font-size: 6.5rem;
-  }
+
   .worksinfo {
     font-size: 1.2rem;
     bottom: -200px;
@@ -1420,10 +1430,7 @@ $j: 1;
     bottom: 15px;
     padding-right: 20%;
   }
-  .worksmob h1 span {
-    font-size: 5.5rem;
-    right: 150px;
-  }
+
   .worksinfo {
     font-size: 1.1rem;
     bottom: -170px;
@@ -1447,11 +1454,7 @@ $j: 1;
     padding: 0;
     margin-left: -50px;
   }
-  .worksmob h1 span {
-    font-size: 4rem;
-    top: 45px;
-    right: 70px;
-  }
+
   .worksinfo {
     font-size: 0.9rem;
     bottom: -130px;
