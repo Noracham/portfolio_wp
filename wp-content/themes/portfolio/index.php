@@ -37,16 +37,16 @@
     <div class="bg worksbg">
         <div class="all_portfolio">
             <div class="instagram port_block">
-                <div class="in_img"><img src="img/p_henadrick.jpeg" alt="henadrick"><img src="img/p_monburan.jpg" alt="monburan"><img src="img/p_ryoma.jpg" alt="ryoma"></div>
-                <div class="in_img"><img src="img/works_dejavu.jpg" alt="dejavu"><img src="img/p_season.jpg" alt="season"><img src="img/p_aespa.jpg" alt="aespa"></div>
-                <img class="arrow ar" src="img/arrowP.png" alt="arrow">
-                <a href="https://www.instagram.com/rr_ym4/" target="_blank"><img class="link_button" src="img/instagram_button.png" alt="instagram"></a>
+                <div class="in_img"><img src="<?php echo esc_url(get_theme_file_uri('img/p_henadrick.jpeg')) ?>" alt="henadrick"><img src="<?php echo esc_url(get_theme_file_uri('img/p_monburan.jpg')) ?>" alt="monburan"><img src="<?php echo esc_url(get_theme_file_uri('img/p_ryoma.jpg')) ?>" alt="ryoma"></div>
+                <div class="in_img"><img src="<?php echo esc_url(get_theme_file_uri('img/works_dejavu.jpg')) ?>" alt="dejavu"><img src="<?php echo esc_url(get_theme_file_uri('img/p_season.jpg')) ?>" alt="season"><img src="<?php echo esc_url(get_theme_file_uri('img/p_aespa.jpg')) ?>" alt="aespa"></div>
+                <img class="arrow ar" src="<?php echo esc_url(get_theme_file_uri('img/arrowP.png')) ?>" alt="arrow">
+                <a href="https://www.instagram.com/rr_ym4/" target="_blank"><img class="link_button" src="<?php echo esc_url(get_theme_file_uri('img/instagram_button.png')) ?>" alt="instagram"></a>
             </div>
             <div class="portfolio port_block">
-                <div class="in_img"><img src="img/p_portfolio.jpg" alt="portfolio"><img src="img/p_dejavu.jpg" alt="dejavu"><img src="img/p_thanks.jpg" alt="thanks"></div>
-                <div class="in_img"><img src="img/p_majan.jpg" alt="majan"><img src="img/p_yubika.jpg" alt="yubika"><img src="img/coming soon.jpg" alt="coming soon"></div>
-                <img class="arrow2 ar" src="img/arrowO.png" alt="arrow">
-                <a href="works.html"><img class="link_button" src="img/portfolio_button.png" alt="portfolio"></a>
+                <div class="in_img"><img src="<?php echo esc_url(get_theme_file_uri('img/p_portfolio.jpg')) ?>" alt="portfolio"><img src="<?php echo esc_url(get_theme_file_uri('img/p_dejavu.jpg')) ?>" alt="dejavu"><img src="<?php echo esc_url(get_theme_file_uri('img/p_thanks.jpg')) ?>" alt="thanks"></div>
+                <div class="in_img"><img src="<?php echo esc_url(get_theme_file_uri('img/p_majan.jpg')) ?>" alt="majan"><img src="<?php echo esc_url(get_theme_file_uri('img/p_yubika.jpg')) ?>" alt="yubika"><img src="<?php echo esc_url(get_theme_file_uri('img/coming soon.jpg')) ?>" alt="coming soon"></div>
+                <img class="arrow2 ar" src="<?php echo esc_url(get_theme_file_uri('img/arrowO.png')) ?>" alt="arrow">
+                <a href="works.html"><img class="link_button" src="<?php echo esc_url(get_theme_file_uri('img/portfolio_button.png')) ?>" alt="portfolio"></a>
             </div>
         </div>
     </div>
