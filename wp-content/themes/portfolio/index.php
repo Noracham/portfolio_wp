@@ -29,7 +29,7 @@
             <div class="dump"><img src="<?php echo esc_url(get_theme_file_uri('img/ABC.png')) ?>" alt="ABC"></div>
         </div>
 
-        <a href="about.html"><img class="viewmore" src="<?php echo esc_url(get_theme_file_uri('img/viewmore_button.png')) ?>" alt="viewmore"></a>
+        <a href="<?php echo esc_url(home_url('/about')) ?>"><img class="viewmore" src="<?php echo esc_url(get_theme_file_uri('img/viewmore_button.png')) ?>" alt="viewmore"></a>
     </div>
 </section>
 <section class="works flex wrapper">
