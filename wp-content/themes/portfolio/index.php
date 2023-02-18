@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <section class="main flex">
-    <img src="img/NishioRyoma.png" alt="NishioRyoma">
+    <img src="<?php echo esc_url(get_theme_file_uri('img/NishioRyoma.png')) ?>" alt="NishioRyoma">
 </section>
 <section class="about flex wrapper">
     <div class="titleimg titleabout"></div>
@@ -11,25 +11,25 @@
                 <div class="ab-content">
                     <p>I AM RYOMA</p>
                     <p>TAKAYAMA CITY</p>
-                    <div class="bgsmile"><img src="img/smile1.png" alt="smile"></div>
+                    <div class="bgsmile"><img src="<?php echo esc_url(get_theme_file_uri('img/smile1.png')) ?>" alt="smile"></div>
                 </div>
 
                 <div class="ab-content">
                     <p>WEB DESIGN</p>
                     <p>FRONTEND</p>
-                    <div class="bgsmile"><img src="img/smile1.png" alt="smile"></div>
+                    <div class="bgsmile"><img src="<?php echo esc_url(get_theme_file_uri('img/smile1.png')) ?>" alt="smile"></div>
                 </div>
 
                 <div class="ab-content">
                     <p>What’s wrong with</p>
                     <p>enjoying the moment?</p>
-                    <div class="bgsmile"><img src="img/smile1.png" alt="smile"></div>
+                    <div class="bgsmile"><img src="<?php echo esc_url(get_theme_file_uri('img/smile1.png')) ?>" alt="smile"></div>
                 </div>
             </div>
-            <div class="dump"><img src="img/ABC.png" alt="ABC"></div>
+            <div class="dump"><img src="<?php echo esc_url(get_theme_file_uri('img/ABC.png')) ?>" alt="ABC"></div>
         </div>
 
-        <a href="about.html"><img class="viewmore" src="img/viewmore_button.png" alt="viewmore"></a>
+        <a href="about.html"><img class="viewmore" src="<?php echo esc_url(get_theme_file_uri('img/viewmore_button.png')) ?>" alt="viewmore"></a>
     </div>
 </section>
 <section class="works flex wrapper">
