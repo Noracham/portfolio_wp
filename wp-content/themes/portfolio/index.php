@@ -46,7 +46,7 @@
                 <div class="in_img"><img src="<?php echo esc_url(get_theme_file_uri('img/p_portfolio.jpg')) ?>" alt="portfolio"><img src="<?php echo esc_url(get_theme_file_uri('img/p_dejavu.jpg')) ?>" alt="dejavu"><img src="<?php echo esc_url(get_theme_file_uri('img/p_thanks.jpg')) ?>" alt="thanks"></div>
                 <div class="in_img"><img src="<?php echo esc_url(get_theme_file_uri('img/p_majan.jpg')) ?>" alt="majan"><img src="<?php echo esc_url(get_theme_file_uri('img/p_yubika.jpg')) ?>" alt="yubika"><img src="<?php echo esc_url(get_theme_file_uri('img/coming soon.jpg')) ?>" alt="coming soon"></div>
                 <img class="arrow2 ar" src="<?php echo esc_url(get_theme_file_uri('img/arrowO.png')) ?>" alt="arrow">
-                <a href="works.html"><img class="link_button" src="<?php echo esc_url(get_theme_file_uri('img/portfolio_button.png')) ?>" alt="portfolio"></a>
+                <a href="<?php echo esc_url(home_url('/category/works')) ?>"><img class="link_button" src="<?php echo esc_url(get_theme_file_uri('img/portfolio_button.png')) ?>" alt="portfolio"></a>
             </div>
         </div>
     </div>
@@ -71,7 +71,7 @@
                 </div>
             </div>
             <p class="OR">OR</p>
-            <div class="contact_button"><a href="contact.html"></a><img src="img/contact_button.png" alt="contact"></div>
+            <div class="contact_button"><a href="<?php echo esc_url(home_url('/contact')) ?>"></a><img src="<?php echo esc_url(get_theme_file_uri('img/contact_button.png')) ?>" alt="contact"></div>
         </div>
     </div>
 </section>
