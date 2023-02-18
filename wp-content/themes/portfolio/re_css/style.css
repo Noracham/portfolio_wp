@@ -1388,7 +1388,6 @@
   font-size: 9rem;
   font-weight: 600;
   font-style: normal;
-  /* transform: rotate(-40deg); */
   margin: 0 auto;
   padding-right: 15%;
   width: 100%;
@@ -1399,17 +1398,16 @@
   z-index: 300;
 }
 
-.worksmob h1 span {
+.worksmob a {
+  color: black;
+  text-decoration: none;
+}
+.worksmob a:nth-of-type(2) {
   position: absolute;
   color: rgba(73, 73, 73, 0.8);
   top: 65px;
   font-size: 7rem;
   z-index: 2;
-}
-
-.worksmob a {
-  color: black;
-  text-decoration: none;
 }
 
 .worksIntext {
@@ -1551,6 +1549,10 @@
 
 .worksinfo p {
   color: black;
+}
+
+.works-tag {
+  font-size: 20px;
 }
 
 @keyframes worksfadeIn {
