@@ -8,6 +8,7 @@
     <meta content="WEBデザイナーを目指し、日々猛進する現役専門学生の初ポートフォリオサイト。ネオン（光）をモチーフにしたサイトに仕上げました。" name="description">
     <link rel="icon" href="<?php echo esc_url(get_theme_file_uri('img/icon_32x32.ico')) ?>">
     <title><?php echo bloginfo('name'); ?></title>
+    <?php wp_head(); ?>
     <script>
         (function(d) {
             var config = {
@@ -65,3 +66,5 @@
             </div>
         </div>
     </header>
+    <div id="stalker"></div>
+    <div class="hide">

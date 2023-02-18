@@ -1,3 +1,5 @@
+var $ = jQuery.noConflict();
+
 $(function () {
   /*scrolltest*/
   gsap.set(".worksmob", { opacity: 0, scale: 0.9 });

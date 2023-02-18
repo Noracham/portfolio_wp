@@ -1,3 +1,5 @@
+var $ = jQuery.noConflict();
+
 $(function () {
   let check = false;
 
@@ -424,13 +426,6 @@ $("a").mouseout(function () {
 $(window).on("load", function () {
   setTimeout(() => {
     $(".loading").fadeOut(1000);
-    $(".hide").css("display","block");
+    $(".hide").css("display", "block");
   }, 1000);
-
-
-
-
-
-
-  
 });
