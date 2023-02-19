@@ -1285,7 +1285,8 @@ $j: 1;
     }
     @include m.mq(sp1) {
       font-size: 5.5rem;
-      right: 150px;
+      top: 50px;
+      right: 50px;
     }
     @include m.mq(sp2) {
       font-size: 4rem;
@@ -1427,8 +1428,9 @@ $j: 1;
   }
   .worksmob h1 {
     font-size: 6.5rem;
-    bottom: 15px;
-    padding-right: 20%;
+    left: 50px;
+    bottom: -30px;
+    padding-right: 0;
   }
 
   .worksinfo {
@@ -1450,7 +1452,8 @@ $j: 1;
   }
   .worksmob h1 {
     font-size: 5rem;
-    bottom: -10px;
+    bottom: -27px;
+    left: 80px;
     padding: 0;
     margin-left: -50px;
   }

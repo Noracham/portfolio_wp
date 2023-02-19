@@ -1862,7 +1862,8 @@
 @media screen and (max-width: 600px) {
   .worksmob a:nth-of-type(2) {
     font-size: 5.5rem;
-    right: 150px;
+    top: 50px;
+    right: 50px;
   }
 }
 @media screen and (max-width: 460px) {
@@ -2013,8 +2014,9 @@
   }
   .worksmob h1 {
     font-size: 6.5rem;
-    bottom: 15px;
-    padding-right: 20%;
+    left: 50px;
+    bottom: -30px;
+    padding-right: 0;
   }
   .worksinfo {
     font-size: 1.1rem;
@@ -2035,7 +2037,8 @@
   }
   .worksmob h1 {
     font-size: 5rem;
-    bottom: -10px;
+    bottom: -27px;
+    left: 80px;
     padding: 0;
     margin-left: -50px;
   }

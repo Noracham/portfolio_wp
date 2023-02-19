@@ -416,7 +416,7 @@ $(function () {
     }, 100);
   });
 });
-$("a").hover(function () {
+$(".viewmore").hover(function () {
   $("#stalker").css({ animation: "stalker_hov .5s linear infinite" });
 });
 $("a").mouseout(function () {
